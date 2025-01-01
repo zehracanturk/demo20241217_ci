@@ -38,4 +38,8 @@ jobs:
       with:
         paths: ${{ github.workspace }}/MetinEditoru/target/site/jacoco/jacoco.xml
         token: ${{ secrets.GITHUB_TOKEN }}
-    
+        min-coverage-overall: 80
+        min-coverage-changed-files: 80
+        update-comment: false
+        debug-mode: false
+     
